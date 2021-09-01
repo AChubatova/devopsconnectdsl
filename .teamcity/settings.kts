@@ -1,4 +1,5 @@
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
+import jetbrains.buildServer.configs.kotlin.v2019_2.projectFeatures.azureDevopsConnection
 import jetbrains.buildServer.configs.kotlin.v2019_2.projectFeatures.githubConnection
 
 /*
@@ -42,6 +43,12 @@ project {
             displayName = "GitHub.com"
             clientId = "a"
             clientSecret = "credentialsJSON:9bc387b7-9a3d-4de2-8ec8-6c65bf98cd0d"
+        }
+        azureDevopsConnection {
+            id = "PROJECT_EXT_49"
+            displayName = "Azure DevOps PAT"
+            serverUrl = "https://dev.azure.com//chubatova"
+            accessToken = "credentialsJSON:b60bf9c1-ae2d-4b28-b2e9-f703be16fec2"
         }
     }
 }
