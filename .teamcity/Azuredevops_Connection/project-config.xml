@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" parent-id="Azuredevops" xsi:noNamespaceSchemaLocation="https://www.jetbrains.com/teamcity/schemas/2021.1/project-config.xsd">
+  <name>connection</name>
+  <parameters />
+  <project-extensions>
+    <extension id="PROJECT_EXT_48" type="OAuthProvider">
+      <parameters>
+        <param name="clientId" value="a" />
+        <param name="defaultTokenScope" value="public_repo,repo,repo:status,write:repo_hook" />
+        <param name="displayName" value="GitHub.com" />
+        <param name="gitHubUrl" value="https://github.com/" />
+        <param name="providerType" value="GitHub" />
+        <param name="secure:clientSecret" value="credentialsJSON:9bc387b7-9a3d-4de2-8ec8-6c65bf98cd0d" />
+      </parameters>
+    </extension>
+    <extension id="PROJECT_EXT_49" type="OAuthProvider">
+      <parameters>
+        <param name="displayName" value="Azure DevOps PAT" />
+        <param name="providerType" value="tfs" />
+        <param name="secure:accessToken" value="credentialsJSON:b60bf9c1-ae2d-4b28-b2e9-f703be16fec2" />
+        <param name="serverUrl" value="https://dev.azure.com//chubatova" />
+        <param name="type" value="token" />
+      </parameters>
+    </extension>
+    <extension id="PROJECT_EXT_50" type="OAuthProvider">
+      <parameters>
+        <param name="clientId" value="sdf" />
+        <param name="displayName" value="Slack" />
+        <param name="providerType" value="slackConnection" />
+        <param name="secure:clientSecret" value="credentialsJSON:78e9cbf3-6abc-4875-8e38-42cdb63aa616" />
+        <param name="secure:token" value="credentialsJSON:78e9cbf3-6abc-4875-8e38-42cdb63aa616" />
+      </parameters>
+    </extension>
+    <extension id="PROJECT_EXT_51" type="versionedSettings">
+      <parameters>
+        <param name="buildSettings" value="ALWAYS_USE_CURRENT" />
+        <param name="credentialsStorageType" value="credentialsJSON" />
+        <param name="enabled" value="true" />
+        <param name="rootId" value="Azuredevops_Connection_HttpsGithubComAChubatovaDevopsconnectdsl" />
+        <param name="showChanges" value="false" />
+      </parameters>
+    </extension>
+  </project-extensions>
+  <cleanup />
+</project>
+
