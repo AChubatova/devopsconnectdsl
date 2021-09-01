@@ -31,7 +31,7 @@ project {
             id = "PROJECT_EXT_45"
             type = "OAuthProvider"
             param("secure:clientSecret", "credentialsJSON:48892994-dd28-4b88-b905-3d2e3779a090")
-            param("displayName", "Azure DevOps OAuth 2.0")
+            param("displayName", "chubatova name from dsl")
             param("applicationId", "79FC526A-931E-4896-806A-892F798047F8")
             param("azureDevOpsUrl", "https://app.vssps.visualstudio.com")
             param("providerType", "AzureDevOps")
