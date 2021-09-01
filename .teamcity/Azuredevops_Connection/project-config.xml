@@ -40,6 +40,15 @@
         <param name="showChanges" value="false" />
       </parameters>
     </extension>
+    <extension id="PROJECT_EXT_52" type="OAuthProvider">
+      <parameters>
+        <param name="applicationId" value="asd" />
+        <param name="azureDevOpsUrl" value="https://app.vssps.visualstudio.com" />
+        <param name="displayName" value="Azure DevOps OAuth 2.0" />
+        <param name="providerType" value="AzureDevOps" />
+        <param name="secure:clientSecret" value="credentialsJSON:8ae33ce3-422e-459c-8e8d-17c812dcc5e7" />
+      </parameters>
+    </extension>
   </project-extensions>
   <cleanup />
 </project>
