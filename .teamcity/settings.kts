@@ -1,4 +1,5 @@
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
+import jetbrains.buildServer.configs.kotlin.v2019_2.projectFeatures.githubConnection
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -35,6 +36,12 @@ project {
             param("applicationId", "79FC526A-931E-4896-806A-892F798047F8")
             param("azureDevOpsUrl", "https://app.vssps.visualstudio.com")
             param("providerType", "AzureDevOps")
+        }
+        githubConnection {
+            id = "PROJECT_EXT_48"
+            displayName = "GitHub.com"
+            clientId = "a"
+            clientSecret = "credentialsJSON:9bc387b7-9a3d-4de2-8ec8-6c65bf98cd0d"
         }
     }
 }
