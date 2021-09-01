@@ -1,6 +1,7 @@
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
 import jetbrains.buildServer.configs.kotlin.v2019_2.projectFeatures.azureDevopsConnection
 import jetbrains.buildServer.configs.kotlin.v2019_2.projectFeatures.githubConnection
+import jetbrains.buildServer.configs.kotlin.v2019_2.projectFeatures.slackConnection
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -49,6 +50,13 @@ project {
             displayName = "Azure DevOps PAT"
             serverUrl = "https://dev.azure.com//chubatova"
             accessToken = "credentialsJSON:b60bf9c1-ae2d-4b28-b2e9-f703be16fec2"
+        }
+        slackConnection {
+            id = "PROJECT_EXT_50"
+            displayName = "Slack"
+            botToken = "credentialsJSON:78e9cbf3-6abc-4875-8e38-42cdb63aa616"
+            clientId = "sdf"
+            clientSecret = "credentialsJSON:78e9cbf3-6abc-4875-8e38-42cdb63aa616"
         }
     }
 }
