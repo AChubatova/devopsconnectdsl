@@ -1,5 +1,6 @@
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
 import jetbrains.buildServer.configs.kotlin.v2019_2.projectFeatures.azureDevOpsOAuthConnection
+import jetbrains.buildServer.configs.kotlin.v2019_2.projectFeatures.azureDevopsConnection
 import jetbrains.buildServer.configs.kotlin.v2019_2.projectFeatures.githubConnection
 
 /*
@@ -35,6 +36,12 @@ project {
             azureDevOpsUrl = "s"
             applicationId = "s"
             clientSecret = "credentialsJSON:dc172f6d-0299-4461-bc7b-cc3b8fe65d91"
+        }
+        azureDevopsConnection {
+            id = "PROJECT_EXT_40"
+            displayName = "Azure DevOps PAT"
+            serverUrl = "https://dev.azure.com/sdkslpat"
+            accessToken = "credentialsJSON:f1a5fabf-15ae-42a3-914a-97a0d118c9a5"
         }
         githubConnection {
             id = "PROJECT_EXT_48"
